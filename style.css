@@ -16,8 +16,8 @@ body {
 }
 
 #wrapper {
-    max-width: 1920px;
-    min-width: 320px;
+    /* max-width: 1920px;
+    min-width: 320px; */
     margin: auto;
 }
 
@@ -31,7 +31,6 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
-    
 }
 
 img {
@@ -44,7 +43,7 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
-    
+    /* position: relative; */
 }
 
 h1 {
@@ -54,9 +53,8 @@ h1 {
 
 p {
     text-align: left;
-    margin-top: 60px;
     margin-left: 15px;
-    margin-bottom: 20px;
+    
 }
 
 a {
@@ -77,8 +75,7 @@ label {
 	cursor: pointer;
     width: 8px;
 	height: 8px;
-	margin: 25px 10px 0 10px;
-    
+	margin: 55px 10px 0 10px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -88,6 +85,7 @@ label {
 	-o-transition: background-color ease-in-out .5s;
 	transition: background-color ease-in-out .5s;
     z-index: 4;
+    position: relative;
 }
 
 label:after {
@@ -100,6 +98,10 @@ label:after {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
+    
+	position: absolute;
+	top: -4px;
+    left: -4px;
 }
 
 #controls label:active {
@@ -132,4 +134,58 @@ label:hover,
 #slide5:checked ~ #slider .slide5 {
 	opacity: 1;
     z-index: 3;
+}
+
+@media only screen and (max-width : 1920px) {
+    #wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    p {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    #wrapper {
+        width: 50%;
+        margin: auto;
+    }
+    
+    p {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width : 660px) {
+    #wrapper {
+        width: 50%;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 80%;
+    }
+
+    p {
+        font-size: 80%;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width : 560px) {
+    #wrapper {
+        width: 50%;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 80%;
+    }
+
+    p {
+        font-size: 80%;
+        margin-bottom: 60px;
+    }
 }
