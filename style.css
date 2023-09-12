@@ -158,23 +158,7 @@ label:hover,
     }
 }
 
-@media only screen and (max-width : 660px) {
-    #wrapper {
-        width: 50%;
-        margin: auto;
-    }
-    
-    h1 {
-        font-size: 80%;
-    }
-
-    p {
-        font-size: 80%;
-        margin-bottom: 60px;
-    }
-}
-
-@media only screen and (max-width : 560px) {
+@media only screen and (max-width : 768px) {
     #wrapper {
         width: 50%;
         margin: auto;
