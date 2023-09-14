@@ -31,6 +31,7 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 0 auto;
 }
 
 img {
@@ -43,7 +44,7 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
-    /* position: relative; */
+    margin-left: 35vw;  
 }
 
 h1 {
@@ -54,7 +55,7 @@ h1 {
 p {
     text-align: left;
     margin-left: 15px;
-    
+    margin-bottom: 20px; 
 }
 
 a {
@@ -75,7 +76,7 @@ label {
 	cursor: pointer;
     width: 8px;
 	height: 8px;
-	margin: 55px 10px 0 10px;
+	margin: 20px 10px 0 10px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
@@ -140,11 +141,7 @@ label:hover,
     #wrapper {
         width: 100%;
         margin: auto;
-    }
-
-    p {
-        margin-bottom: 60px;
-    }
+    }  
 }
 
 @media only screen and (max-width : 1024px) {
@@ -155,6 +152,47 @@ label:hover,
     
     p {
         margin-bottom: 60px;
+    }
+
+    #controls {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0;
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        margin: 55px 10px 0 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: background-color ease-in-out .5s;
+        -moz-transition: background-color ease-in-out .5s;
+        -o-transition: background-color ease-in-out .5s;
+        transition: background-color ease-in-out .5s;
+        z-index: 4;
+        position: relative;
+    }
+    
+    label:after {
+        display: block;
+        border: 2px solid #ddd;
+        content: " ";
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        
+        position: absolute;
+        top: -4px;
+        left: -4px;
     }
 }
 
@@ -171,5 +209,46 @@ label:hover,
     p {
         font-size: 80%;
         margin-bottom: 60px;
+    }
+
+    #controls {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0;
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        margin: 55px 10px 0 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: background-color ease-in-out .5s;
+        -moz-transition: background-color ease-in-out .5s;
+        -o-transition: background-color ease-in-out .5s;
+        transition: background-color ease-in-out .5s;
+        z-index: 4;
+        position: relative;
+    }
+    
+    label:after {
+        display: block;
+        border: 2px solid #ddd;
+        content: " ";
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        
+        position: absolute;
+        top: -4px;
+        left: -4px;
     }
 }
