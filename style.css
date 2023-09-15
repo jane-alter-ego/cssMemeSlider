@@ -16,22 +16,22 @@ body {
 }
 
 #wrapper {
-    /* max-width: 1920px;
-    min-width: 320px; */
     margin: auto;
+    width: 650px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%; 
+    margin: auto;
 }
 
 #slider {
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 img {
@@ -42,9 +42,9 @@ img {
 
 #controls {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-left: 35vw;  
+    justify-content:flex-end;
+    margin: 0 auto;
+    width: 650px; 
 }
 
 h1 {
@@ -139,7 +139,7 @@ label:hover,
 
 @media only screen and (max-width : 1920px) {
     #wrapper {
-        width: 100%;
+       width: 100%;
         margin: auto;
     }  
 }
@@ -159,6 +159,7 @@ label:hover,
         justify-content: center;
         align-content: center;
         margin-left: 0;
+        width: 100%;
     }
 
     label {
@@ -216,6 +217,7 @@ label:hover,
         justify-content: center;
         align-content: center;
         margin-left: 0;
+        width: 100%;
     }
 
     label {
